@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Navbar</title>
+  </head>
+  <!-- Los componentes se dividen en div para poder dar orden a todo. Al ser todos componentes, el plug-in de Figma en VS Code te lo pasa todo más automático. -->
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"></div>
+        <!-- Toda esta parte es solo y exclusivamente para el navbar, fue por lejos lo más complejo por cómo lo reconocía el plug-in, ya que todos los elementos interiores eran 
+          frames individuales, por eso tantos div, preferí mantenerlos así para no romper todo y seguir usando la lógica del plug-in. -->
+        <div class="nav">
+          <div class="nav-item">
+            <div class="nav-text active">INICIO</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">PORTAFOLIO</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">ACERCA</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">CONTACTO</div>
+            <div class="nav-underline"></div>
+          </div>
+        </div>
+        <!-- De momento tuve problemas para poder usar iconos, así que solo les asigne la clase y el contenedor como div para posteriormente ver su implementación. -->
+        <div class="social-icons">
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
