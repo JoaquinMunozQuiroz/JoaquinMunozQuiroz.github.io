@@ -171,6 +171,7 @@ hacer otro estilo solo para esto, aunque ahora me complicó el código. */
 .profile-pic {
   width: 412px;
   height: 677px;
-  background: #434343;
+  background: #434343 url('images/profilepic.jpg') no-repeat center center;
+  background-size: cover;
   border-radius: 350px;
 }
