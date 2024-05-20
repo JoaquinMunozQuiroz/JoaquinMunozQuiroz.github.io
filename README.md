@@ -1,3 +1,3 @@
 # Portafolio
 
-Parte de mi portafolio que contiene la pantalla del home. :)
+Mi portafolio!, Work in Progress
