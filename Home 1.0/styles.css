@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+}
+/* Estilos de la pantalla que son mantenidos en las vistas, como todo fue hecho con auto-layout lo deja todo bastante bien. */
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 87px 48px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 103px;
+}
+/* Todas las líneas de aquí abajo son todas referentes a los estilos del navbar. */
+.header {
+  width: 1344px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Como no hay foto, tomo directo los estilos del contenedor que hay. */
+.logo {
+  width: 210px;
+  height: 70px;
+  background: #434343;
+  border-radius: 5px;
+}
+/* Esto es el contenedor del navbar y sus elementos interiores. */
+.nav {
+  width: 732px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 36px;
+}
+/* Este es el frame que contiene el texto en su interior. */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Las propiedades del texto que está en cada frame del navbar, en caso de tenerlo. */
+.nav-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.nav-text.active {
+  color: black;
+}
+
+.nav-text:not(.active) {
+  color: #7b7b7b;
+}
+/* Frame que hace de underline en el texto, no está incorporado directo en el texto porque no quería 
+hacer otro estilo solo para esto, aunque ahora me complicó el código. */
+.nav-underline {
+  align-self: stretch;
+  height: 2px;
+  margin: 8px 0;
+  background: black;
+  border-radius: 5px;
+}
+
+.nav-item .nav-underline:not(:first-of-type) {
+  background: none;
+}
+/* Muestra los estilos de los iconos que están en la parte derecha del navbar. */
+.social-icons {
+  width: 258px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #434343;
+  border-radius: 50px;
+}
+/* De aquí para abajo es el contenedor de los textos principales al lado de la foto. */
+.main {
+  width: 1344px;
+  height: 677px;
+  padding: 0 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+}
+
+.content {
+  width: 519px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 24px;
+}
+/* El frame superior. */
+.title {
+  align-self: stretch;
+  color: black;
+  font-size: 32px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+/* El "botón" que dice UX/UI. */
+.buttons {
+  align-self: stretch;
+  height: 431px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.button {
+  padding: 11px 37px 11px 36px;
+  background: black;
+  border-radius: 38px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 32px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+/* La presentación, "Hola!, soy...". */
+.intro {
+  color: black;
+  font-size: 96px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+/* El texto de abajo es más extenso. */
+.description {
+  align-self: stretch;
+  color: black;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+/* El contenedor de la foto. */
+.profile-pic {
+  width: 412px;
+  height: 677px;
+  background: #434343;
+  border-radius: 350px;
+}
