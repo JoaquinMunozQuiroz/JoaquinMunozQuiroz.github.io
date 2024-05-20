@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portafolio - Joaquín Muñoz</title>
+  </head>
+  <!-- Los componentes se dividen en div para poder dar orden a todo. Al ser todos componentes, el plug-in de Figma en VS Code te lo pasa todo más automático. -->
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo"></div>
+        <!-- Toda esta parte es solo y exclusivamente para el navbar, fue por lejos lo más complejo por cómo lo reconocía el plug-in, ya que todos los elementos interiores eran 
+          frames individuales, por eso tantos div, preferí mantenerlos así para no romper todo y seguir usando la lógica del plug-in. -->
+        <div class="nav">
+          <div class="nav-item">
+            <div class="nav-text active">INICIO</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">PORTAFOLIO</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">ACERCA</div>
+            <div class="nav-underline"></div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-text">CONTACTO</div>
+            <div class="nav-underline"></div>
+          </div>
+        </div>
+        <!-- De momento tuve problemas para poder usar iconos, así que solo les asigne la clase y el contenedor como div para posteriormente ver su implementación. -->
+        <div class="social-icons">
+          <div class="icon"></div>
+          <div class="icon"></div>
+          <div class="icon"></div>
+        </div>
+      </div>
+      <!-- Todo este div es del contenedor del home que dice mi "especialización", el detalle del botón y bueno, mi nombre con una descripción de lo que hago. -->
+      <div class="main">
+        <div class="content">
+          <div class="title">PRODUCT DESIGNER</div>
+          <div class="buttons">
+            <div class="button">
+              <div class="button-text">UX/UI</div>
+            </div>
+            <div class="intro">HOLA! SOY <br />JOAQUÍN <br />MUÑOZ</div>
+          </div>
+          <div class="description">
+            Soy un diseñador UX/UI apasionado por crear experiencias digitales
+            intuitivas y atractivas. Con experiencia en investigación, diseño y
+            prototipado, colaboro con equipos para transformar ideas en
+            productos impactantes. Si buscas un diseñador comprometido con la
+            calidad y la innovación, ¡estoy aquí para ayudar! :)
+          </div>
+        </div>
+        <!-- Este contenedor es para mi foto. -->
+        <div class="profile-pic"></div>
+      </div>
+    </div>
+  </body>
+</html>
